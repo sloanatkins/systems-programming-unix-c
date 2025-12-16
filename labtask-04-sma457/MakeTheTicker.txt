@@ -1,0 +1,1 @@
+cp ../Ticker.c . && gcc -Wall -Wextra -Wpedantic Ticker.c -o Ticker

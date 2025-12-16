@@ -1,0 +1,5 @@
+step 4 - setting permissions:
+
+cd LabTask2
+mkdir IveGotRights
+chmod 751 IveGotRights

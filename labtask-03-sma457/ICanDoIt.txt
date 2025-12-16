@@ -1,0 +1,15 @@
+Sloan Atkins - CSC322 - LabTask3 Work
+
+1. touch Help\!\ I\'ve\ run\ out\ of\ \$s
+2. ls [A-Za-z]*[0-9]*.[a-z]?
+3. gcc -o Ticker Ticker.c
+   ./Ticker 5 & ./Ticker 7
+   kill -TSTP %?7
+   jobs
+   bg %?7
+   fg %?5
+   kill -TSTP %?5
+   kill %?5
+   kill %?7
+4. nl -ba -w1 -s': ' CSCCodes.txt | head -n 12 | tail -n +5 | grep -E -w 'C[sS][cC][0-9]{3}'
+  

@@ -1,0 +1,65 @@
+# 1. Create a new directory and move into it
+mkdir GitLab
+cd GitLab
+
+# 2. Copy HelloWorld.c into the directory
+cp ../HelloWorld.c .
+
+# 3. Initialize a new Git repository
+git init
+
+# 4. Add the file and make the first commit
+git add HelloWorld.c
+git commit -m "Initial commit with HelloWorld.c"
+
+# 5. Create the remote GitHub repository (CSC322-GitLab) manually on GitHub
+#    Then connect it locally using SSH
+git branch -M main
+git remote add origin git@github.com:sma457/CSC322-GitLab.git
+
+# 6. Push the initial commit to GitHub
+git push -u origin main
+
+# 7. Edit HelloWorld.c to print "Hello Crool World!"
+# (used nano to edit)
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Changed to 'Hello Crool World!'"
+git push
+
+# 8. Create and switch to a new branch called Happy
+git branch Happy
+git checkout Happy
+git push -u origin Happy
+
+# 9. Edit HelloWorld.c to print "Hello Happy World!"
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Changed to 'Hello Happy World!'"
+git push
+
+# 10. Switch back to the main branch
+git checkout main
+
+# 11. Edit HelloWorld.c to print "Hello Very Crool World!"
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Changed to 'Hello Very Crool World!'"
+git push
+
+# 12. Merge the Happy branch into main
+git merge Happy
+# (Resolved merge conflict manually in HelloWorld.c:
+#   changed to "Hello Very Happy World!" and removed conflict markers)
+git add HelloWorld.c
+git commit -m "Merged Happy branch to create 'Hello Very Happy World!'"
+git push
+
+# 13. Edit HelloWorld.c to print "Hello Crazy World!"
+nano HelloWorld.c
+git add HelloWorld.c
+git commit -m "Changed to 'Hello Crazy World!'"
+git push
+
+# 14. Create the Git log and graph files for submission
+git log --all --graph > GitLog.txt

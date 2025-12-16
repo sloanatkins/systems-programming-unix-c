@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "User ID:           $(id -u)"
+echo "Primary group ID:  $(id -g)"
+echo "Groups:            $(id -Gn)"
+echo "Shell:             ${SHELL}"
+echo "Home:              ${HOME}"
+echo "PATH:              ${PATH}"

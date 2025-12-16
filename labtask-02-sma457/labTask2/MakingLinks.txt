@@ -1,0 +1,18 @@
+commands used for part number 3:
+mkdir LabTask2
+cd LabTask2
+mkdir Originals
+cd Originals
+touch HardStuff.txt
+vim HardStuff.txt
+	- i
+	- inputted all my information
+	- esc
+	- :wq
+touch SoftStuff.txt
+vim SoftStuff.txt
+	- same process as HardStuff.txt
+cd ..
+mkdir Links
+ln    ../Originals/HardStuff.txt LinkToHardStuff.txt
+ln -s ../Originals/SoftStuff.txt  RelativeToSoftStuff.txt
