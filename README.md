@@ -18,7 +18,7 @@ This course covers programming in a UNIX environment, including shell usage, scr
 ## Repository Structure
 - `/lab-01` – `/lab-13` – Progressive lab assignments covering UNIX and C fundamentals
 - `/project-01`, `/project-02` – Larger systems programming projects
-- `/tests` – Test programs and experiments
+- `/tests` – Final Exam program
 
 ## Notes
 This repository emphasizes correctness, low-level understanding, and practical interaction with the UNIX operating system rather than high-level application development.
