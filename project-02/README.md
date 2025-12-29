@@ -17,6 +17,9 @@ The two programs communicate using a named pipe and signals. The server spawns d
 
 ### Architecture
 
+User ──▶ Interface Process ──▶ Named Pipe (FIBOPIPE) ──▶ Server Process
+│
+└──▶ Detached worker threads
 
 ---
 
