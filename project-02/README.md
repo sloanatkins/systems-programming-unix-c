@@ -1,3 +1,22 @@
+## Threaded Fibonacci Server with CPU Limits and IPC
+
+This project implements a multi-threaded Fibonacci computation server that communicates with a user interface process via a named pipe. The system demonstrates advanced UNIX systems programming concepts including interprocess communication, signal handling, CPU usage limits, and concurrent computation using detached threads.
+
+---
+
+### Overview
+
+The system consists of two cooperating programs:
+
+- **ThreadFibServer** – A server that manages Fibonacci computations under a CPU usage limit
+- **Interface program** – A user-facing process that sends computation requests to the server
+
+The two programs communicate using a named pipe and signals. The server spawns detached threads to compute Fibonacci numbers concurrently using an intentionally expensive recursive algorithm.
+
+---
+
+### Architecture
+
 
 ---
 
